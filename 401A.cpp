@@ -1,4 +1,3 @@
-#include "pch.h"
 #include <iostream>
 using namespace std;
 int main()
@@ -16,7 +15,7 @@ int main()
 		m++;
 	else {
 		while (sum2 > x){
-			sum2-=x;
+			sum2-= x;
 			m++;
 			if (sum2 <= x) {
 				m++;
@@ -25,6 +24,5 @@ int main()
 		}
 	}
 	cout << m;
-	system("pause");
-	
+	return 0;
 }
