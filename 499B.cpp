@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include<map>
+#include <map>
 using namespace std;
 int main()
 {
@@ -22,7 +22,5 @@ int main()
 		else
 			cout << x << " ";
 	}
-
-
-	system("pause");
+	return 0;
 }
