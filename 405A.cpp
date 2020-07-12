@@ -1,16 +1,29 @@
+#include "pch.h"
 #include <iostream>
-#include<algorithm>
-#include <vector>
+#include <string>
 using namespace std;
 int main()
 {
-	int n;
-	cin >> n;
-	vector< int > a(n);
-	for (int i = 0; i < n; i++)
-		cin >> a[i];
-	sort(a.begin(), a.end());
-	for (int i = 0; i < n; i++) 
-		cout << a[i] << " ";
-	return 0;
+	int t, n[44],m[44];
+	string s[44];
+	cin >> t;
+	for (int i = 0; i < t; i++) {
+		m[i] = 26;
+	}
+	for (int i = 0; i < t; i++) {
+		cin >> n[i];
+		cin >> s[i];
+		for (int j = 0; j < s[i].length(); j++) {
+			if (s[i][j] == 65 + j && s[i][j + 1] == 65 + j + 1)
+				continue;
+			else
+				m[i]++;
+		}
+	}
+	for (int i = 0; i < t; i++) {
+		cout<< m[i] << endl;
+	}
+
+
+	system("pause");
 }

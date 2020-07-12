@@ -1,24 +1,31 @@
 #include <iostream>
-#include <string>
-#include <map>
+#include<string>
+#include<algorithm>
 using namespace std;
 int main()
 {
 	int n;
 	cin >> n;
-	map< string, int > str;
-	string s;
+	string  str[100000];
+	int  items[100000];
+	
 	for (int i = 0; i < n; i++) {
-		cin >> s;
-		if (str.count(s)==0) {
-			cout << "OK" << "\n";
-			str[s] = 1;
-		}
-		else {
-			cout << s << str[s] << "\n";
-			str[s] += 1;
-
-		}
+		cin >> str[i];
+		items[i] = 0;
+		if (find(0, i, str[i]) != -1)
+			items[i]++;
+		
 	}
-	return 0;
+	for (int i = 0; i < n; i++) {
+		if (find(0, i, str[i]) != -1)
+			cout << "OK\n";
+		else
+		cout << str[i] << items[i] << "\n";
+	}
+
+
+
+
+
+	system("pause");
 }
