@@ -13,12 +13,9 @@ int main()
 				x++;
 				y = 0;
 			}
-
 		}
 		i++;
 	}
-
 	cout << x;
-
-	system("pause");
+	return 0;
 }
