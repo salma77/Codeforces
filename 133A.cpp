@@ -1,4 +1,3 @@
-	#include "pch.h"
 	#include <iostream>
 	#include <string>
 	using namespace std;
@@ -18,5 +17,5 @@
 		else
 			cout << "NO" << endl;
 
-		system("pause");
+		return 0;
 	}
