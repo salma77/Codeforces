@@ -5,8 +5,8 @@ int main()
 {
 	int n=1,i,j=0;
 	string s, t;
-	getline(cin, s);
-	getline(cin, t);
+	cin >> s;
+	cin >> t;
 	for (i = 0; i < t.length(); i++) {
 		if (s[j] == t[i]) {
 			n++;
@@ -14,5 +14,5 @@ int main()
 		}
 	}
 	cout << n;
-	//system("pause");
+	return 0;
 }
