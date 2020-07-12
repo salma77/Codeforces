@@ -1,4 +1,3 @@
-#include "pch.h"
 #include <iostream>
 #include<string>
 using namespace std;
@@ -11,10 +10,9 @@ int main()
 		cin >> s[i];
 		if (s[i][1] == '+')
 			x++;
-		else if(s[i][1] == '-')
+		else if (s[i][1] == '-')
 			x--;
 	}
 	cout << x;
-	system("pause");
-
+	return 0;
 }
