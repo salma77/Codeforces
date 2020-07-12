@@ -1,15 +1,13 @@
-#include "pch.h"
 #include <iostream>
 #include <string>
 using namespace std;
 int main()
 {
-	int t, n[44],m[44];
+	int t, n[44], m[44];
 	string s[44];
 	cin >> t;
-	for (int i = 0; i < t; i++) {
+	for (int i = 0; i < t; i++)
 		m[i] = 26;
-	}
 	for (int i = 0; i < t; i++) {
 		cin >> n[i];
 		cin >> s[i];
@@ -20,10 +18,7 @@ int main()
 				m[i]++;
 		}
 	}
-	for (int i = 0; i < t; i++) {
+	for (int i = 0; i < t; i++) 
 		cout<< m[i] << endl;
-	}
-
-
-	system("pause");
+	return 0;
 }
