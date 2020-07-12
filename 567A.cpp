@@ -18,9 +18,7 @@ int main()
 					min = abs(x[i] - x[j]);
 			}
 		}
-		cout << min << " " << max<< "\n";
+		cout << min << " " << max << "\n";
 	}
-
-
-	system("pause");
+	return 0;
 }
