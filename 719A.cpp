@@ -7,7 +7,6 @@ int main()
 	for (int i = 0; i < n; i++) {
 		cin >> a[i];
 	}
-
 	if (n == 1) {
 		if (a[0] == 15)
 			cout << "DOWN";
@@ -22,7 +21,5 @@ int main()
 		else
 			cout << "DOWN";
 	}
-	
-
-	system("pause");
+	return 0;
 }
