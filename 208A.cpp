@@ -5,7 +5,7 @@ int main()
 {
 	string s, pattern="hello";
 	int pos=0;
-	getline(cin, s);
+	cin >> s;
 	if(s.length()>=5)
 		for (int i = 0; i < s.length(); i++) {
 			if (s[i] == pattern[pos]) {
@@ -13,16 +13,10 @@ int main()
 				if (pos == 5)
 					break;	
 			}	
-			
-			
-
 		}
 	if (pos == 5)
 		cout << "YES";
 	else
 		cout << "NO";
-
-	
-
 	return 0;
 }
