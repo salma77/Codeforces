@@ -5,16 +5,14 @@
 	int main()
 	{
 		string s;
-		getline(cin,s);
+		cin >> s;
 		for (int i = 0; i < s.length(); i++) {
 			if (s[i] == '+')
 				s.erase(i, 1);
 		}
 		sort(s.begin(),s.end());
-		for (int i = 1; i < s.length(); i+=2) {
+		for (int i = 1; i < s.length(); i+=2) 
 			s.insert(i, 1, '+');
-		}
-
 		cout << s;
-		system("pause");
+		return 0;
 	}
