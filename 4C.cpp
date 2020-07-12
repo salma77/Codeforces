@@ -1,5 +1,5 @@
 #include <iostream>
-#include<string>
+#include <string>
 #include <map>
 using namespace std;
 int main()
@@ -8,11 +8,10 @@ int main()
 	cin >> n;
 	map< string, int > str;
 	string s;
-
 	for (int i = 0; i < n; i++) {
 		cin >> s;
 		if (str.count(s)==0) {
-			cout << "OK"<< "\n";
+			cout << "OK" << "\n";
 			str[s] = 1;
 		}
 		else {
@@ -20,8 +19,6 @@ int main()
 			str[s] += 1;
 
 		}
-
 	}
-
-	system("pause");
+	return 0;
 }
