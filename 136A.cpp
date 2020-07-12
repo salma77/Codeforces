@@ -1,4 +1,3 @@
-#include "pch.h"
 #include <iostream>
 using namespace std;
 int main()
@@ -9,8 +8,7 @@ int main()
 		cin >> a[i];
 		b[a[i]-1] = i+1;
 	}
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++)
 		cout<< b[i]<<" ";
-	}
-	system("pause");
+	return 0;
 }
