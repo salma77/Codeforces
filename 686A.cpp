@@ -2,10 +2,10 @@
 using namespace std;
 int main()
 {
-	long long int n, x, d, y = 0;
+	long long int x, d;
+	int n, y = 0;
 	char i;
 	cin >> n >> x;
-
 	while (n != 0) {
 		cin >> i >> d;
 		if (i == '+') {
@@ -21,5 +21,5 @@ int main()
 		n--;
 	}
 	cout << x << " " << y;
-	system("pause");
+	return 0;
 }
