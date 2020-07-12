@@ -12,7 +12,5 @@ int main()
 		else
 			cout << "." << c;
 	}
-
-
-	system("pause");
+	return 0;
 }
