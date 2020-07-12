@@ -5,7 +5,7 @@
 	{
 		string s;
 		bool flag = false;
-		getline(cin, s);
+		cin >> s;
 		for (int i = 0; i < s.length(); i++) {
 			if (s[i] == 'H' || s[i] == 'Q' || s[i] == '9') {
 				flag = true;
