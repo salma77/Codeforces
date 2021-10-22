@@ -14,11 +14,11 @@ int main()
 		if (find(0, i, str[i]) != -1)
 			items[i]++;
 	}
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++) 
 		if (find(0, i, str[i]) != -1)
 			cout << "OK\n";
 		else
-		cout << str[i] << items[i] << "\n";
-	}
+			cout << str[i] << items[i] << "\n";
+	
 	return 0;
 }
